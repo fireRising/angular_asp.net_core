@@ -1,0 +1,47 @@
+.profile_all {
+}
+.profile_header {
+  margin-top: 80px;
+  margin-bottom: 18px;
+}
+.profile_info_border {
+  border-style: groove;
+}
+.profile_info {
+  margin: 40px;
+}
+hr {
+  margin-top:0px;
+  margin-bottom:6px;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.text_name_section {
+  font-family: 'Helvetica Regular', 'Helvetica';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.text_name_header {
+  font-family: 'Helvetica Regular', 'Helvetica';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+}
+
+.text_name_person {
+  font-family: 'Helvetica Regular', 'Helvetica';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+}
+
+.text_name_content {
+  font-family: 'Helvetica Regular', 'Helvetica';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
