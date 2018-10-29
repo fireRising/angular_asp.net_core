@@ -3,27 +3,249 @@
         <div class="profile_header">
             <span class="text_name_header">Профиль</span>
         </div>
-        <div class="profile_info_border" style="background-color: white;">
+        <div class="profile_info_border">
             <div class="profile_info">
                 <div class="row">
                     <div class="col-lg-3">
-                        <img width="250" alt="Profile Avatar" src="25.png" style="margin-bottom:30px;"/>
+                        <img width="250" alt="Profile Avatar" src="{{image_path}}" class="image_profile"/>
                     </div>
                     <div class="col-lg-9">
-                        <p><span class="text_name_person">{{name}}</span></p>
-                        <button type="button" class="btn btn-primary btn-md" style="margin-bottom:70px">Редактировать профиль</button>
-                        <p><span class="text_name_section">Перечень читаемых дисциплин</span></p>
-                        <hr>
-                        <span class="text_name_content">Биология, химия</span>
+                        <div class="text_name_person">
+                          <span>{{name}}</span>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-md">Редактировать профиль</button>
+                        <div class="text_name_section">
+                          <span class="text_name_section">Перечень читаемых дисциплин</span>
+                        </div>
+                        <div class="line">
+                          <hr class="horizontal_line">
+                        </div>
+                        <div class="text_name_content">
+                          <span class="text_name_content">Биология, химия</span>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg">
-                        <p><span class="text_name_section">Краткая биография (интересные факты)</span></p>
-                        <hr>
-                        <span class="text_name_content">Автор рабочей программы по дисциплине «Биотехнология агроценозов». Под его руководством выполнены и защищены 2 бакалаврских и 3 магистерские работы студентов кафедры микробиологии СПб Государственного Университета и кафедры промышленной</span>
+                        <div class="text_name_section">
+                          <span>Краткая биография (интересные факты)</span>
+                        </div>
+                        <div class="line">
+                          <hr class="horizontal_line">
+                        </div>
+                        <div class="text_name_content">
+                          <span>
+                            {{bio}}
+                          </span>
+                        </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-lg">
+                      <div class="text_name_section">
+                        <span>Тематика самостоятельной научно-исследовательской и творческой деятельности</span>
+                      </div>
+                      <div class="line">
+                        <hr class="horizontal_line">
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="text_name_content_div text-left">
+                          <span>Наименование и реквизиты:</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="text_name_content text-left">
+                          <span>
+                            1. Креативные процессы в стилистике текста (Протокол заседания кафедры русского языка и стилистики № 1 от 2 сентября 2017 г.) <br />
+                            2. Активные процессы в современном русском языке в сопоставительном аспекте. Компьютерная лингводидактика преподавания русского языка как родного, неродного и иностранного.
+                          </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg">
+                    <div class="text_name_section">
+                      <span>Опыт работы в научных  организациях или в реальном секторе экономики</span>
+                    </div>
+                    <div class="line">
+                      <hr class="horizontal_line">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="text_name_content_div text-left">
+                      <span>Наименование организации:</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="text_name_content text-left">
+                      <span>
+                        НИУ "МИЭТ"
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="text_name_content_div text-left">
+                      <span>Должность в организации:</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="text_name_content text-left">
+                      <span>
+                        Преподаватель
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="text_name_content_div text-left">
+                      <span>Время работы в организации:</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="text_name_content text-left">
+                      <span>
+                        5 лет 5 месяцев
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg">
+                    <div class="text_name_section">
+                      <span>Информация обо мне в информационных системах института</span>
+                    </div>
+                    <div class="line">
+                      <hr class="horizontal_line">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="text_name_content_div text-left">
+                      <span>Условия привлечения: </span>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="text_name_content text-left">
+                      <span>
+                        Штатный сотрудник: заведующий кафедрой<br />
+
+                        По совместительству: преподаватель
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="text_name_content_div text-left">
+                      <span>Ученая степень:</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="text_name_content text-left">
+                      <span>
+                        Кандидат наук
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="text_name_content_div text-left">
+                      <span>Научная специальность:</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="text_name_content text-left">
+                      <span>
+                        Кандидат технических наук
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="text_name_content_div text-left">
+                      <span>Ученое звание:</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="text_name_content text-left">
+                      <span>
+                        Профессор
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="text_name_content_div text-left">
+                      <span>Ученое звание по кафедре (специальность):</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="text_name_content text-left">
+                      <span>
+                        Профессор по кафедре
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="text_name_content_div text-left">
+                      <span>Уровень образования:</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="text_name_content text-left">
+                      <span>
+                        Диплом о высшем образовании от 14.06.2001. Квалификация: Преподаватель по специальности "Лингвистика и межкультурная коммуникация"
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="text_name_content_div text-left">
+                      <span>Статьи в отечественных научных журналах:</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="text_name_content text-left">
+                      <span>
+                        1.     Ахтемова Г.А., Першина Е.В., Пинаев А.Г., Андронов Е.Е., Штарк О.Ю., Чеботарь В.К., Борисов А.Ю., Тихонович И.А., Кипрушкина Е.И., Абдурашитов С.Ф., Джианиназзи-Пирсон В. Формирование структуры бактериального сообщества в отвалах заводов по переработке сахарной свеклы.Журнал Сахар.№10,с.30-36. (2010).
+                        <br />
+                        2.     Чеботарь В.К., Петров В.Б., Шапошников А.И., Кравченко Л.В. Биохимические критерии оценки агрономически значимых свойств бацилл, используемых при создании микробиологических препаратов. Сельскохозяйственная биология. №3. С.119-122. (2011).
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="text_name_content_div text-left">
+                      <span>Статьи в зарубежных научных журналах:</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="text_name_content text-left">
+                      <span>
+                        1.     Malfanova N., Kamilova F., Validov S., Shcherbakov A., Chebotar V., Tikhonovich I., Lugtenberg B. Characterization of Bacillus subtilis HC8, a novel plant-beneficial endophytic strain from giant hogweed. Microbial Biotechnology.V.4. P.523–532. 5 (2011).
+                        <br />
+                        2.     Egamberdieva D., Kucharova Z., Davranov K., Berg G., Makarova N., Azarova T., Chebotar V., Tikhonovich I., Kamilova F., Validov S. Z., Lugtenberg B.. Bacteria able to control foot and root rot and to promote growth of cucumber in salinated soils. Biol. Fertil. Soils. V.47.P.197–205. (2011).
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- И ТАК ДАЛЕЕ-->
             </div>
         </div>
     </div>
