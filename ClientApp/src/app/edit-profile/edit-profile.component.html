@@ -1,0 +1,159 @@
+<div class="container-fluid">
+    <div class="full-block">
+        <div class="profile-edit-header">
+          <span class="profile-edit-header__text">
+              Данные профиля
+          </span>
+        </div>
+        <div class="profile-edit-border">
+          <div class="input">
+            <div class="input__avatar">
+              <div class="row">
+                <div class="col-lg-2">
+                  <span class="input__text">
+                    Фото
+                  </span>
+                </div>
+                <div class="col-lg-10">
+                  <image-upload url="https://httpbin.org/status/200"
+                                buttonCaption="Выберите фото"
+                                dropBoxMessage="или перенесите его сюда, чтобы прикрепить"
+                                clearButtonCaption="Удалить">
+                  </image-upload>
+                </div>
+              </div>
+            </div>
+            <div class="input__bio">
+              <div class="row">
+                <div class="col-lg-2">
+                  <span class="input__text">
+                    Краткая биография (интересные факты)
+                  </span>
+                </div>
+                <div class="col-lg-10">
+                  <div>
+                    <textarea class="input__textarea"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="input__activity-subject">
+              <div class="row">
+                <div class="col-lg-2">
+                  <span class="input__text">
+                    Тематика самостоятельной научно-исследовательской и творческой деятельности
+                  </span>
+                </div>
+                <div class="col-lg-10">
+                  <div class="input__border">
+                    <div class="row">
+                      <div class="col-lg-3" style="margin-left: 0px;">
+                        <span class="input__text-actsubj">
+                            Наименование:
+                        </span>
+                      </div>
+                      <div class="col-lg-9">
+                        <textarea class="input__textarea-actsubj"></textarea>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-3" style="margin-left: 0px;">
+                        <span class="input__text-actsubj">
+                            Реквизиты подтверждающего документа:
+                        </span>
+                      </div>
+                      <div class="col-lg-9">
+                        <textarea class="input__textarea-actsubj"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input__activity-subject-add">
+                      <span class="input__text-actsubj" style="text-decoration: underline; color: #428BCA; ">
+                          Добавить тематику деятельности
+                      </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="input__experience">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <span class="input__text">
+                            Опыт  работы в научных  организациях или в реальном секторе экономики
+                        </span>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="input__border">
+                            <div class="row">
+                                <div class="col-lg-3" style="margin-left: 0px;">
+                                    <span class="input__text">
+                                        Наименование организации:
+                                    </span>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="text" class="input__experience-text-input" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3" style="margin-left: 0px;">
+                                    <span class="input__text">
+                                        Должность в организации:
+                                    </span>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="text" class="input__experience-text-input" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3" style="margin-left: 0px;">
+                                    <span class="input__text">
+                                        Период:
+                                    </span>
+                                </div>
+                                <div class="col-lg-4" style="margin-left: 0px;">
+                                    <input type="date" class="input__experience-date-input" />
+                                </div>
+                                <div class="col-lg-1 text-center" style="margin-left: 0px;">
+                                    <span class="input__text">
+                                        -
+                                    </span>
+                                </div>
+                                <div class="col-lg-4" style="margin-left: 0px;">
+                                    <input type="date" class="input__experience-date-input" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3" style="margin-left: 0px;">
+                                    <span class="input__text">
+                                        Загрузить подтверждающий документ:
+                                    </span>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="file" class="input__experience-file-input"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input__experience-add">
+                            <span class="input__text" style="text-decoration: underline; color: #428BCA; ">
+                                Добавить работу по совместительству.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="profile-edit-save-cancel">
+            <div class="line">
+                <div class="profile-edit-save-cancel__save-button">
+                    <button type="button" class="btn btn-primary btn-lg">Сохранить</button>
+                </div>
+            </div>
+            <div class="line">
+                <div class="profile-edit-save-cancel__cancel-button">
+                    <button type="button" class="btn btn-danger btn-lg">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

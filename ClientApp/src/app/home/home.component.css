@@ -1,21 +1,24 @@
 .profile_all {
+  margin-top: 40px;
 }
 
 .image_profile {
   margin-bottom: 30px;
 }
 .profile_header {
-  margin-top: 80px;
-  margin-bottom: 18px;
+  padding-bottom: 18px;
 }
 
 .profile_info_border {
   border-style: groove;
   background-color: white;
+  padding-right: 14px;
 }
 
 .profile_info {
   margin: 40px;
+  padding-left: 8px;
+  padding-bottom: 20px;
 }
 
 .btn {
@@ -37,7 +40,7 @@
   font-style: normal;
   font-size: 20px;
   margin-bottom: 7px;
-  margin-top: 12px;
+  margin-top: 17px;
 }
 .text_name_header {
   font-family: 'Helvetica Regular', 'Helvetica';

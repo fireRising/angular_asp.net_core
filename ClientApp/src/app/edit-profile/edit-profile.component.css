@@ -1,0 +1,114 @@
+.full-block {
+  padding-left: 0px;
+  padding-bottom: 15px;
+  padding-top: 40px;
+}
+
+.profile-edit-header {
+  padding-bottom: 18px;
+}
+
+.profile-edit-header__text {
+  font-family: 'Helvetica Regular', 'Helvetica';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+}
+
+.profile-edit-border {
+  border-style: groove;
+  background-color: white;
+  padding-right: 14px;
+  margin-bottom: 17px;
+}
+
+.input__avatar {
+  margin-bottom: 30px;
+}
+
+.input__bio {
+  margin-bottom: 30px;
+}
+
+.input {
+  margin: 40px;
+  padding-left: 8px;
+  padding-bottom: 20px;
+}
+
+.input__activity-subject {
+  margin-bottom: 120px;
+}
+
+.input__border {
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.input__activity-subject-add {
+}
+
+.input__textarea {
+  width: 100%;
+  height: 150px;
+  font-family: 'Arial Regular', 'Arial';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  text-decoration: none;
+  color: #000000;
+  text-align: left;
+}
+
+.input__text {
+  font-family: 'Helvetica Regular', 'Helvetica';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.input__text-actsubj {
+  font-family: 'Helvetica Regular', 'Helvetica';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.input__textarea-actsubj {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.input__experience {
+  margin-bottom: 140px;
+}
+
+.input__experience-text-input {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 25px;
+}
+
+.input__experience-file-input {
+  margin-bottom: 10px;
+}
+
+.input__experience-date-input {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 30px;
+}
+
+.input__experience-add {
+}
+
+.line {
+  display: inline-block;
+}
+
+.profile-edit-save-cancel__cancel-button {
+  margin-left: 10px;
+}

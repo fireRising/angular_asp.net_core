@@ -1,0 +1,28 @@
+.full-block {
+  padding-right: 14px;
+  padding-top: 7px;
+}
+
+.line {
+  display: inline-block;
+}
+
+.text-role {
+  font-family: 'Helvetica Regular', 'Helvetica';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  margin-right: 22px;
+}
+
+.image-profile {
+  margin-right: 9px;
+}
+
+.button-options {
+  margin-right: 3px;
+  margin-left: 10px;
+}
+
+.button-exit {
+}

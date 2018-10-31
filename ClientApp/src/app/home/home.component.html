@@ -6,14 +6,16 @@
         <div class="profile_info_border">
             <div class="profile_info">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3" style="padding-left: 0px;">
                         <img width="250" alt="Profile Avatar" src="{{image_path}}" class="image_profile"/>
                     </div>
                     <div class="col-lg-9">
                         <div class="text_name_person">
                           <span>{{name}}</span>
                         </div>
-                        <button type="button" class="btn btn-primary btn-md">Редактировать профиль</button>
+                        <a [routerLink]='["/edit-profile"]'>
+                          <button type="button" class="btn btn-primary btn-md">Редактировать профиль</button>
+                        </a>
                         <div class="text_name_section">
                           <span class="text_name_section">Перечень читаемых дисциплин</span>
                         </div>
@@ -33,7 +35,7 @@
                         <div class="line">
                           <hr class="horizontal_line">
                         </div>
-                        <div class="text_name_content">
+                        <div class="text_name_content text-left">
                           <span>
                             {{bio}}
                           </span>
@@ -51,7 +53,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3" style="padding-left: 0px;">
                         <div class="text_name_content_div text-left">
                           <span>Наименование и реквизиты:</span>
                         </div>
@@ -76,7 +78,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-3">
+                  <div class="col-lg-3" style="padding-left: 0px;">
                     <div class="text_name_content_div text-left">
                       <span>Наименование организации:</span>
                     </div>
@@ -90,7 +92,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-3">
+                  <div class="col-lg-3" style="padding-left: 0px;">
                     <div class="text_name_content_div text-left">
                       <span>Должность в организации:</span>
                     </div>
@@ -104,7 +106,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-3">
+                  <div class="col-lg-3" style="padding-left: 0px;">
                     <div class="text_name_content_div text-left">
                       <span>Время работы в организации:</span>
                     </div>
@@ -128,7 +130,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-3">
+                  <div class="col-lg-3" style="padding-left: 0px;">
                     <div class="text_name_content_div text-left">
                       <span>Условия привлечения: </span>
                     </div>
@@ -144,7 +146,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-3">
+                  <div class="col-lg-3" style="padding-left: 0px;">
                     <div class="text_name_content_div text-left">
                       <span>Ученая степень:</span>
                     </div>
@@ -158,7 +160,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-3">
+                  <div class="col-lg-3" style="padding-left: 0px;">
                     <div class="text_name_content_div text-left">
                       <span>Научная специальность:</span>
                     </div>
@@ -172,7 +174,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-3">
+                  <div class="col-lg-3" style="padding-left: 0px;">
                     <div class="text_name_content_div text-left">
                       <span>Ученое звание:</span>
                     </div>
@@ -186,7 +188,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-3">
+                  <div class="col-lg-3" style="padding-left: 0px;">
                     <div class="text_name_content_div text-left">
                       <span>Ученое звание по кафедре (специальность):</span>
                     </div>
@@ -200,7 +202,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-3">
+                  <div class="col-lg-3" style="padding-left: 0px;">
                     <div class="text_name_content_div text-left">
                       <span>Уровень образования:</span>
                     </div>
@@ -214,7 +216,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-3">
+                  <div class="col-lg-3" style="padding-left: 0px;">
                     <div class="text_name_content_div text-left">
                       <span>Статьи в отечественных научных журналах:</span>
                     </div>
@@ -230,7 +232,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-3">
+                  <div class="col-lg-3" style="padding-left: 0px;">
                     <div class="text_name_content_div text-left">
                       <span>Статьи в зарубежных научных журналах:</span>
                     </div>
