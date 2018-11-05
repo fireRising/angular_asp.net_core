@@ -8,10 +8,21 @@ import { Component, OnInit } from '@angular/core';
   })
 
 export class EditProfileComponent implements OnInit {
-  
-  constructor() { }
 
-  ngOnInit() {
-  }
+    flag_act_subj: boolean = true;
+    flag_exp: boolean = true;
+
+    toggle_act_subj() {
+        this.flag_act_subj = !this.flag_act_subj;
+    }
+
+    toggle_exp() {
+        this.flag_exp = !this.flag_exp;
+    }
+
+    constructor() { }
+
+    ngOnInit() {
+    }
 
 }
