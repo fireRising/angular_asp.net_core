@@ -11,19 +11,21 @@ import { NgForm } from '@angular/forms';
 export class EditProfileComponent implements OnInit {
 
     bio_text: string = "";
-    name_theme_text: string[] = new Array(10);
-    requisites_doc_text: string[] = new Array(10);
 
-    organise_name_text: string[] = new Array(10);
-    organise_pos_text: string[] = new Array(10);
-    date1_text: string[] = new Array(10);
-    date2_text: string[] = new Array(10);
+    limit: number = 10;
+    name_theme_text: string[] = new Array(this.limit);
+    requisites_doc_text: string[] = new Array(this.limit);
+
+    organise_name_text: string[] = new Array(this.limit);
+    organise_pos_text: string[] = new Array(this.limit);
+    date1_text: string[] = new Array(this.limit);
+    date2_text: string[] = new Array(this.limit);
 
     count_act_subj: number = 0;
     arr_count_act_obj: number[] = Array.from(Array(this.count_act_subj).keys());
 
     incrCountActSubj() {
-        if (this.count_act_subj < 10) {
+        if (this.count_act_subj < this.limit) {
             this.count_act_subj += 1;
             this.arr_count_act_obj = Array.from(Array(this.count_act_subj).keys());
         }
@@ -42,7 +44,7 @@ export class EditProfileComponent implements OnInit {
     arr_count_experience: number[] = Array.from(Array(this.count_experience).keys());
 
     incrCountExp() {
-        if (this.count_experience < 10) {
+        if (this.count_experience < this.limit) {
             this.count_experience += 1;
             this.arr_count_experience = Array.from(Array(this.count_experience).keys());
         }
