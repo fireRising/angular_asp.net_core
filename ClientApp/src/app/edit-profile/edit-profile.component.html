@@ -131,7 +131,7 @@
                                             </span>
                                         </div>
                                         <div class="col-lg-9">
-                                            <input type="text" class="input__experience-text-input" name="organise_name" [(ngModel)]="organise_name_text" #organise_name="ngModel" required/>
+                                            <input type="text" class="input__experience-text-input" name="organise_name" [(ngModel)]="organise_name_text[0]" #organise_name="ngModel" required/>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -141,7 +141,7 @@
                                             </span>
                                         </div>
                                         <div class="col-lg-9">
-                                            <input type="text" class="input__experience-text-input" name="organise_pos" [(ngModel)]="organise_pos_text" #organise_pos="ngModel" required/>
+                                            <input type="text" class="input__experience-text-input" name="organise_pos" [(ngModel)]="organise_pos_text[0]" #organise_pos="ngModel" required/>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -151,11 +151,11 @@
                                             </span>
                                         </div>
                                         <div class="col-lg-9" style="margin-left: 0px;">
-                                            <input type="date" class="input__experience-date-input" name="date1" [(ngModel)]="date1_text" #date1="ngModel" required/>
+                                            <input type="date" class="input__experience-date-input" name="date1" [(ngModel)]="date1_text[0]" #date1="ngModel" required/>
                                             <span class="input__text text-center">
                                                 -
                                             </span>
-                                            <input type="date" class="input__experience-date-input pull-right" name="date2" [(ngModel)]="date2_text" #date2="ngModel" required/>
+                                            <input type="date" class="input__experience-date-input pull-right" name="date2" [(ngModel)]="date2_text[0]" #date2="ngModel" required/>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -169,19 +169,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="input__experience-add" *ngIf="flag_exp">
-                                    <button (click)="toggle_exp()" style="border: 0; padding: 0; background-color: white;">
-                                        <span class="input__text" style="text-decoration: underline; color: #428BCA; ">
-                                            Добавить работу по совместительству.
-                                        </span>
-                                    </button>
-                                </div>
                             </div>
                         </div>
-                        <div class="row" *ngIf="!flag_exp">
+                        <div class="row" *ngFor="let item1 of arr_count_experience; let ind1 = index">
                             <div class="col-lg-2">
                                 <div class="input__close-image pull-right">
-                                    <img src="u22.png" (click)="toggle_exp()" style="margin-top: 118px;" />
+                                    <img src="u22.png" (click)="decrCountExp()" style="margin-top: 118px;" />
                                 </div>
                             </div>
                             <div class="col-lg-10">
@@ -193,7 +186,7 @@
                                             </span>
                                         </div>
                                         <div class="col-lg-9">
-                                            <input type="text" class="input__experience-text-input" />
+                                            <input type="text" class="input__experience-text-input" name="{{ind1}}__1" [(ngModel)]="organise_name_text[ind1+1]" #organise_name="ngModel" required/>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -203,7 +196,7 @@
                                             </span>
                                         </div>
                                         <div class="col-lg-9">
-                                            <input type="text" class="input__experience-text-input" />
+                                            <input type="text" class="input__experience-text-input" name="{{ind1}}__2" [(ngModel)]="organise_pos_text[ind1+1]" #organise_pos="ngModel" required/>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -213,11 +206,11 @@
                                             </span>
                                         </div>
                                         <div class="col-lg-9" style="margin-left: 0px;">
-                                            <input type="date" class="input__experience-date-input" />
+                                            <input type="date" class="input__experience-date-input" name="{{ind1}}__3" [(ngModel)]="date1_text[ind1+1]" #date1="ngModel" required/>
                                             <span class="input__text text-center">
                                                 -
                                             </span>
-                                            <input type="date" class="input__experience-date-input pull-right" />
+                                            <input type="date" class="input__experience-date-input pull-right" name="{{ind1}}__4" [(ngModel)]="date2_text[ind1+1]" #date2="ngModel" required/>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -230,6 +223,20 @@
                                             <input type="file" class="input__experience-file-input" />
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2">
+
+                            </div>
+                            <div class="col-lg-10">
+                                <div class="input__experience-add">
+                                    <button (click)="incrCountExp()" style="border: 0; padding: 0; background-color: white;">
+                                        <span class="input__text" style="text-decoration: underline; color: #428BCA; ">
+                                            Добавить работу по совместительству.
+                                        </span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
