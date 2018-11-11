@@ -12,7 +12,7 @@ export class EditProfileComponent implements OnInit {
 
     bio_text: string = "";
 
-    limit: number = 10;
+    limit: number = 4;
     name_theme_text: string[] = new Array(this.limit);
     requisites_doc_text: string[] = new Array(this.limit);
 
@@ -20,6 +20,7 @@ export class EditProfileComponent implements OnInit {
     organise_pos_text: string[] = new Array(this.limit);
     date1_text: string[] = new Array(this.limit);
     date2_text: string[] = new Array(this.limit);
+
 
     count_act_subj: number = 0;
     arr_count_act_obj: number[] = Array.from(Array(this.count_act_subj).keys());

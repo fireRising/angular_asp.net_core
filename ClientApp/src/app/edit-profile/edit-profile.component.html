@@ -105,7 +105,7 @@
                             <div class="col-lg-2">
                             </div>
                             <div class="col-lg-10">
-                                <div class="input__activity-subject-add">
+                                <div class="input__activity-subject-add" *ngIf="count_act_subj < limit">
                                     <button (click)="incrCountActSubj()" style="border: 0; padding: 0; background-color: white;">
                                         <span class="input__text-actsubj" style="text-decoration: underline; color: #428BCA; ">
                                             Добавить тематику деятельности
@@ -231,7 +231,7 @@
 
                             </div>
                             <div class="col-lg-10">
-                                <div class="input__experience-add">
+                                <div class="input__experience-add" *ngIf="count_experience < limit">
                                     <button (click)="incrCountExp()" style="border: 0; padding: 0; background-color: white;">
                                         <span class="input__text" style="text-decoration: underline; color: #428BCA; ">
                                             Добавить работу по совместительству.
