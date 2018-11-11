@@ -1,7 +1,23 @@
+input.ng-touched.ng-invalid {
+  border: solid red 2px;
+}
+
+input.ng-touched.ng-valid {
+  border: solid green 2px;
+}
+
+textarea.ng-touched.ng-invalid {
+  border: solid red 2px;
+}
+
+textarea.ng-touched.ng-valid {
+  border: solid green 2px;
+}
+
 .full-block {
   padding-left: 0px;
   padding-bottom: 15px;
-  padding-top: 40px;
+  padding-top: 80px;
 }
 
 .profile-edit-header {
@@ -51,6 +67,12 @@
 .input__activity-subject-add {
 }
 
+.input__actsbj-text-input {
+  margin-bottom: 28px;
+  width: 100%;
+  height: 34px;
+}
+
 .input__textarea {
   width: 100%;
   height: 150px;
@@ -61,6 +83,7 @@
   text-decoration: none;
   color: #000000;
   text-align: left;
+  resize: vertical;
 }
 
 .input__text {
