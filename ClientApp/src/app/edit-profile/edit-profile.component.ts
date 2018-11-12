@@ -23,7 +23,7 @@ export class EditProfileComponent implements OnInit {
 
 
     count_act_subj: number = 0;
-    arr_count_act_obj: number[] = Array.from(Array(this.count_act_subj).keys());
+    arr_count_act_obj: number[];
 
     incrCountActSubj() {
         if (this.count_act_subj < this.limit) {
@@ -42,7 +42,7 @@ export class EditProfileComponent implements OnInit {
 
 
     count_experience: number = 0;
-    arr_count_experience: number[] = Array.from(Array(this.count_experience).keys());
+    arr_count_experience: number[];
 
     incrCountExp() {
         if (this.count_experience < this.limit) {
