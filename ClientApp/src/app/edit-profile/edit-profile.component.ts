@@ -9,10 +9,11 @@ import { NgForm } from '@angular/forms';
   })
 
 export class EditProfileComponent implements OnInit {
-
-    bio_text: string = "";
-
+    
     limit: number = 4;
+
+    bio_text: string;
+
     name_theme_text: string[] = new Array(this.limit);
     requisites_doc_text: string[] = new Array(this.limit);
 
@@ -23,38 +24,39 @@ export class EditProfileComponent implements OnInit {
 
 
     count_act_subj: number = 0;
-    arr_count_act_obj: number[];
+    arr_count_act_obj: number[] = new Array(0);
+
 
     incrCountActSubj() {
         if (this.count_act_subj < this.limit) {
             this.count_act_subj += 1;
-            this.arr_count_act_obj = Array.from(Array(this.count_act_subj).keys());
+            this.arr_count_act_obj.length = this.count_act_subj
         }
     }
 
     decrCountActSubj() {
         if (this.count_act_subj > 0) {
             this.count_act_subj -= 1;
-            this.arr_count_act_obj = Array.from(Array(this.count_act_subj).keys());
+            this.arr_count_act_obj.length = this.count_act_subj
         }
 
     }
 
 
     count_experience: number = 0;
-    arr_count_experience: number[];
+    arr_count_experience: number[] = new Array(0);
 
     incrCountExp() {
         if (this.count_experience < this.limit) {
             this.count_experience += 1;
-            this.arr_count_experience = Array.from(Array(this.count_experience).keys());
+            this.arr_count_experience.length = this.count_experience;
         }
     }
 
     decrCountExp() {
         if (this.count_experience > 0) {
             this.count_experience -= 1;
-            this.arr_count_experience = Array.from(Array(this.count_experience).keys());
+            this.arr_count_experience.length = this.count_experience;
         }
 
     }
