@@ -10,69 +10,57 @@ import { NgForm } from '@angular/forms';
 
 export class EditProfileComponent implements OnInit {
     
-    limit: number = 4;
+    public Limit: number = 4;
 
-    bio_text: string;
+    public BioText: string;
 
-    name_theme_text: string[] = new Array(this.limit);
-    requisites_doc_text: string[] = new Array(this.limit);
+    public NameThemeText: string[] = new Array(this.Limit);
+    public RequisitesDocText: string[] = new Array(this.Limit);
 
-    organise_name_text: string[] = new Array(this.limit);
-    organise_pos_text: string[] = new Array(this.limit);
-    date1_text: string[] = new Array(this.limit);
-    date2_text: string[] = new Array(this.limit);
-
-
-    count_act_subj: number = 0;
-    arr_count_act_obj: number[] = new Array(0);
+    public OrganiseNameText: string[] = new Array(this.Limit);
+    public OrganisePosText: string[] = new Array(this.Limit);
+    public Date1Text: string[] = new Array(this.Limit);
+    public Date2Text: string[] = new Array(this.Limit);
 
 
-    incrCountActSubj() {
-        if (this.count_act_subj < this.limit) {
-            this.count_act_subj += 1;
-            this.arr_count_act_obj.length = this.count_act_subj
+    public CountActSubj: number = 0;
+    public ArrCountActObj: number[] = new Array(0);
+
+
+    public IncrCountActSubj() {
+        if (this.CountActSubj < this.Limit) {
+            this.CountActSubj += 1;
+            this.ArrCountActObj.length = this.CountActSubj
         }
     }
 
-    decrCountActSubj() {
-        if (this.count_act_subj > 0) {
-            this.count_act_subj -= 1;
-            this.arr_count_act_obj.length = this.count_act_subj
-        }
-
-    }
-
-
-    count_experience: number = 0;
-    arr_count_experience: number[] = new Array(0);
-
-    incrCountExp() {
-        if (this.count_experience < this.limit) {
-            this.count_experience += 1;
-            this.arr_count_experience.length = this.count_experience;
-        }
-    }
-
-    decrCountExp() {
-        if (this.count_experience > 0) {
-            this.count_experience -= 1;
-            this.arr_count_experience.length = this.count_experience;
+    public DecrCountActSubj() {
+        if (this.CountActSubj > 0) {
+            this.CountActSubj -= 1;
+            this.ArrCountActObj.length = this.CountActSubj
         }
 
     }
 
-    /*
-    flag_act_subj: boolean = true;
-    flag_exp: boolean = true;
 
-    toggle_act_subj() {
-        this.flag_act_subj = !this.flag_act_subj;
+    private CountExperience: number = 0;
+    public ArrCountExperience: number[] = new Array(0);
+
+    public IncrCountExp() {
+        if (this.CountExperience < this.Limit) {
+            this.CountExperience += 1;
+            this.ArrCountExperience.length = this.CountExperience;
+        }
     }
 
-    toggle_exp() {
-        this.flag_exp = !this.flag_exp;
+    public DecrCountExp() {
+        if (this.CountExperience > 0) {
+            this.CountExperience -= 1;
+            this.ArrCountExperience.length = this.CountExperience;
+        }
+
     }
-    */
+
     constructor() { }
 
     ngOnInit() {

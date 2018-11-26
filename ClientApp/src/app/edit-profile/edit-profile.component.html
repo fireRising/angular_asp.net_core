@@ -33,7 +33,7 @@
                             </div>
                             <div class="col-lg-10">
                                 <div>
-                                    <textarea class="input__textarea" name="bio" [(ngModel)]="bio_text" #bio="ngModel" required></textarea>
+                                    <textarea class="input__textarea" name="bio" [(ngModel)]="BioText" #bio="ngModel" required></textarea>
                                 </div>
                             </div>
                         </div>
@@ -54,7 +54,7 @@
                                             </span>
                                         </div>
                                         <div class="col-lg-9">
-                                            <input type="text" class="input__actsbj-text-input" name="name_theme" [(ngModel)]="name_theme_text[0]" #name_theme="ngModel" required/>
+                                            <input type="text" class="input__actsbj-text-input" name="name_theme" [(ngModel)]="NameThemeText[0]" #name_theme="ngModel" required/>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -64,16 +64,16 @@
                                             </span>
                                         </div>
                                         <div class="col-lg-9">
-                                            <input type="text" class="input__actsbj-text-input" name="requisites_doc" [(ngModel)]="requisites_doc_text[0]" #requisites_doc="ngModel" required/>
+                                            <input type="text" class="input__actsbj-text-input" name="requisites_doc" [(ngModel)]="RequisitesDocText[0]" #requisites_doc="ngModel" required/>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row" *ngFor="let item of arr_count_act_obj; let ind = index">
+                        <div class="row" *ngFor="let item of ArrCountActObj; let ind = index">
                             <div class="col-lg-2">
                                 <div class="input__close-image pull-right">
-                                    <img src="u22.png" (click)="decrCountActSubj()" style="margin-top: 67px;" />
+                                    <img src="u22.png" (click)="DecrCountActSubj()" style="margin-top: 67px;" />
                                 </div>
                             </div>
                             <div class="col-lg-10">
@@ -85,7 +85,7 @@
                                             </span>
                                         </div>
                                         <div class="col-lg-9">
-                                            <input type="text" class="input__actsbj-text-input" name="{{ind}}__1_f1" [(ngModel)]="name_theme_text[ind+1]" #name_theme="ngModel" required/>
+                                            <input type="text" class="input__actsbj-text-input" name="{{ind}}__1_f1" [(ngModel)]="NameThemeText[ind+1]" #name_theme="ngModel" required/>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -95,7 +95,7 @@
                                             </span>
                                         </div>
                                         <div class="col-lg-9">
-                                            <input type="text" class="input__actsbj-text-input" name="{{ind}}__2_f1" [(ngModel)]="requisites_doc_text[ind+1]" #requisites_doc="ngModel" required />
+                                            <input type="text" class="input__actsbj-text-input" name="{{ind}}__2_f1" [(ngModel)]="RequisitesDocText[ind+1]" #requisites_doc="ngModel" required />
                                         </div>
                                     </div>
                                 </div>
@@ -105,8 +105,8 @@
                             <div class="col-lg-2">
                             </div>
                             <div class="col-lg-10">
-                                <div class="input__activity-subject-add" *ngIf="count_act_subj < limit">
-                                    <button (click)="incrCountActSubj()" style="border: 0; padding: 0; background-color: white;">
+                                <div class="input__activity-subject-add" *ngIf="CountActSubj < Limit">
+                                    <button (click)="IncrCountActSubj()" style="border: 0; padding: 0; background-color: white;">
                                         <span class="input__text-actsubj" style="text-decoration: underline; color: #428BCA; ">
                                             Добавить тематику деятельности
                                         </span>
@@ -131,7 +131,7 @@
                                             </span>
                                         </div>
                                         <div class="col-lg-9">
-                                            <input type="text" class="input__experience-text-input" name="organise_name" [(ngModel)]="organise_name_text[0]" #organise_name="ngModel" required/>
+                                            <input type="text" class="input__experience-text-input" name="organise_name" [(ngModel)]="OrganiseNameText[0]" #organise_name="ngModel" required/>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -141,7 +141,7 @@
                                             </span>
                                         </div>
                                         <div class="col-lg-9">
-                                            <input type="text" class="input__experience-text-input" name="organise_pos" [(ngModel)]="organise_pos_text[0]" #organise_pos="ngModel" required/>
+                                            <input type="text" class="input__experience-text-input" name="organise_pos" [(ngModel)]="OrganisePosText[0]" #organise_pos="ngModel" required/>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -151,11 +151,11 @@
                                             </span>
                                         </div>
                                         <div class="col-lg-9" style="margin-left: 0px;">
-                                            <input type="date" class="input__experience-date-input" name="date1" [(ngModel)]="date1_text[0]" #date1="ngModel" required/>
+                                            <input type="date" class="input__experience-date-input" name="date1" [(ngModel)]="Date1Text[0]" #date1="ngModel" required/>
                                             <span class="input__text text-center">
                                                 -
                                             </span>
-                                            <input type="date" class="input__experience-date-input pull-right" name="date2" [(ngModel)]="date2_text[0]" #date2="ngModel" required/>
+                                            <input type="date" class="input__experience-date-input pull-right" name="date2" [(ngModel)]="Date2Text[0]" #date2="ngModel" required/>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -171,10 +171,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row" *ngFor="let item1 of arr_count_experience; let ind1 = index">
+                        <div class="row" *ngFor="let item1 of ArrCountExperience; let ind1 = index">
                             <div class="col-lg-2">
                                 <div class="input__close-image pull-right">
-                                    <img src="u22.png" (click)="decrCountExp()" style="margin-top: 118px;" />
+                                    <img src="u22.png" (click)="DecrCountExp()" style="margin-top: 118px;" />
                                 </div>
                             </div>
                             <div class="col-lg-10">
@@ -186,7 +186,7 @@
                                             </span>
                                         </div>
                                         <div class="col-lg-9">
-                                            <input type="text" class="input__experience-text-input" name="{{ind1}}__1_f2" [(ngModel)]="organise_name_text[ind1+1]" #organise_name="ngModel" required/>
+                                            <input type="text" class="input__experience-text-input" name="{{ind1}}__1_f2" [(ngModel)]="OrganiseNameText[ind1+1]" #organise_name="ngModel" required/>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -196,7 +196,7 @@
                                             </span>
                                         </div>
                                         <div class="col-lg-9">
-                                            <input type="text" class="input__experience-text-input" name="{{ind1}}__2_f2" [(ngModel)]="organise_pos_text[ind1+1]" #organise_pos="ngModel" required/>
+                                            <input type="text" class="input__experience-text-input" name="{{ind1}}__2_f2" [(ngModel)]="OrganisePosText[ind1+1]" #organise_pos="ngModel" required/>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -206,11 +206,11 @@
                                             </span>
                                         </div>
                                         <div class="col-lg-9" style="margin-left: 0px;">
-                                            <input type="date" class="input__experience-date-input" name="{{ind1}}__3_f2" [(ngModel)]="date1_text[ind1+1]" #date1="ngModel" required/>
+                                            <input type="date" class="input__experience-date-input" name="{{ind1}}__3_f2" [(ngModel)]="Date1Text[ind1+1]" #date1="ngModel" required/>
                                             <span class="input__text text-center">
                                                 -
                                             </span>
-                                            <input type="date" class="input__experience-date-input pull-right" name="{{ind1}}__4_f2" [(ngModel)]="date2_text[ind1+1]" #date2="ngModel" required/>
+                                            <input type="date" class="input__experience-date-input pull-right" name="{{ind1}}__4_f2" [(ngModel)]="Date2Text[ind1+1]" #date2="ngModel" required/>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -231,8 +231,8 @@
 
                             </div>
                             <div class="col-lg-10">
-                                <div class="input__experience-add" *ngIf="count_experience < limit">
-                                    <button (click)="incrCountExp()" style="border: 0; padding: 0; background-color: white;">
+                                <div class="input__experience-add" *ngIf="CountExperience < Limit">
+                                    <button (click)="IncrCountExp()" style="border: 0; padding: 0; background-color: white;">
                                         <span class="input__text" style="text-decoration: underline; color: #428BCA; ">
                                             Добавить работу по совместительству.
                                         </span>
